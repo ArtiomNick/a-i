@@ -55,7 +55,7 @@ namespace Lesson3
         }
     }
 
-    class Program
+    class ISPviolation
     {
         static void Main(string[] args)
         {

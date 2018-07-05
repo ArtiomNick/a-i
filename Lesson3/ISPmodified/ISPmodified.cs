@@ -38,7 +38,7 @@ namespace ISPmodified
         }
     }
 
-    class Program
+    class ISPmodified
     {
         static void Main(string[] args)
         {

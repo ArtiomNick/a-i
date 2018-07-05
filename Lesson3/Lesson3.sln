@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISPviolation", "Lesson3\ISP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISPmodified", "ISPmodified\ISPmodified.csproj", "{BF017E24-CE87-4994-9C19-C077E6CB2E58}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCPviolation", "OCPviolation\OCPviolation.csproj", "{5DAB787C-0681-402C-BF3E-D2F9D699FA90}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{BF017E24-CE87-4994-9C19-C077E6CB2E58}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF017E24-CE87-4994-9C19-C077E6CB2E58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF017E24-CE87-4994-9C19-C077E6CB2E58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DAB787C-0681-402C-BF3E-D2F9D699FA90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DAB787C-0681-402C-BF3E-D2F9D699FA90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DAB787C-0681-402C-BF3E-D2F9D699FA90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DAB787C-0681-402C-BF3E-D2F9D699FA90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

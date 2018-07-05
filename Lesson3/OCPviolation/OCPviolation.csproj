@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BF017E24-CE87-4994-9C19-C077E6CB2E58}</ProjectGuid>
+    <ProjectGuid>{5DAB787C-0681-402C-BF3E-D2F9D699FA90}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ISPmodified</RootNamespace>
-    <AssemblyName>ISPmodified</AssemblyName>
+    <RootNamespace>OCPviolation</RootNamespace>
+    <AssemblyName>OCPviolation</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ISPmodified.cs" />
+    <Compile Include="OCPviolation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
