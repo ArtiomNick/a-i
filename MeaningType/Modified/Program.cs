@@ -6,44 +6,41 @@ using System.Threading.Tasks;
 
 namespace Modified
 {
-    public interface ProductPurchase
+    public abstract class ProductPurchase : IProductPurchase
     {
-        void buyingProduct();
-        void rejectingProduct();
+        public abstract void buyingProduct();
+        public abstract void rejectingProduct();
 
     }
 
-    public interface ProductResearch
+    public abstract class ProductResearch : IProductResearch
     {
-        void negotiatingThePrice();
-        void studingTheProduct();
+        public abstract void negotiatingThePrice();
+        public abstract void studingTheProduct();
 
     }
+    
 
-    public class Client : ProductPurchase, ProductResearch
+    public class Client : IProductPurchase, IProductResearch
     {
+        ProductResearch Research { get; set; }
+        ProductPurchase Purchase { get; set; }
+
         public void buyingProduct()
         {
-            Console.WriteLine("Product is bought...");
-            Console.ReadKey();
-        }
-
-        public void rejectingProduct()
-        {
-            Console.WriteLine("Product is rejected...");
-            Console.ReadKey();
         }
 
         public void negotiatingThePrice()
         {
-            Console.WriteLine("Price is going to be changed...");
-            Console.ReadKey();
+         
+        }
+
+        public void rejectingProduct()
+        {
         }
 
         public void studingTheProduct()
         {
-            Console.WriteLine("The product is being studied...");
-            Console.ReadKey();
         }
     }
 
