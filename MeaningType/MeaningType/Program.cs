@@ -6,34 +6,51 @@ using System.Threading.Tasks;
 
 namespace MeaningType
 {
-    public class Product
+    public interface ClientBehaviour
     {
-        public string name;
-        public DateTime expirationDate;
-        public int price;
+        void buyingProduct();
+        void rejectingProduct();
+        void negotiatingThePrice();
+        void studingTheProduct();
+    }
 
-        public void isProductOutOfDate()
+    public class Client : ClientBehaviour
+    {
+        public void buyingProduct()
         {
-            Console.WriteLine("Calculating if the product is spoiled...");
+            Console.WriteLine("Product is bought...");
             Console.ReadKey();
         }
 
-        public void isProductExpensive()
+        public void rejectingProduct()
         {
-            Console.WriteLine("Calculating if the product is expensive...");
+            Console.WriteLine("Product is rejected...");
+            Console.ReadKey();
+        }
+
+        public void negotiatingThePrice()
+        {
+            Console.WriteLine("Price is going to be changed...");
+            Console.ReadKey();
+        }
+
+        public void studingTheProduct()
+        {
+            Console.WriteLine("The product is being studied...");
             Console.ReadKey();
         }
     }
+
 
 
     class Program
     {
         static void Main(string[] args)
         {
-            Product product = new Product();
+            Client client = new Client();
 
-            product.isProductOutOfDate();
-            product.isProductExpensive();
+            client.studingTheProduct();
+            client.rejectingProduct();
 
         }
     }
