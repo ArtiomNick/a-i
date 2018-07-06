@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Lesson3
 {
-    public interface Work
+    public interface IWork
     {
         void clean();
         void manage();
         void sell();
     }
 
-    public class Cleaner:Work
+    public class Cleaner:IWork
     {
         public void clean()
         {
@@ -23,23 +23,20 @@ namespace Lesson3
 
         public void manage()
         {
-            Console.WriteLine("Cleaner manages...");
-            Console.ReadKey();
+            throw new NotImplementedException();
         }
 
         public void sell()
         {
-            Console.WriteLine("Cleaner sells...");
-            Console.ReadKey();
+            throw new NotImplementedException();
         }
     }
 
-    public class Manager : Work
+    public class Manager : IWork
     {
         public void clean()
         {
-            Console.WriteLine("Manager cleans...");
-            Console.ReadKey();
+            throw new NotImplementedException();
         }
 
         public void manage()
@@ -50,8 +47,7 @@ namespace Lesson3
 
         public void sell()
         {
-            Console.WriteLine("Manager sells...");
-            Console.ReadKey();
+            throw new NotImplementedException();
         }
     }
 

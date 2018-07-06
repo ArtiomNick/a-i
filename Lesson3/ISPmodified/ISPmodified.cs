@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace ISPmodified
 {
-    public interface WorkForCleaner
+    public interface IWorkForCleaner
     {
         void clean();
 
     }
 
-    public class Cleaner:WorkForCleaner
+    public class Cleaner:IWorkForCleaner
     {
         public void clean()
         {
@@ -23,13 +23,13 @@ namespace ISPmodified
         
     }
 
-    public interface WorkForManager
+    public interface IWorkForManager
     {
         void manage();
 
     }
 
-    public class Manager:WorkForManager
+    public class Manager:IWorkForManager
     {
         public void manage()
         {
