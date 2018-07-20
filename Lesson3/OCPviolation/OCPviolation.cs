@@ -41,10 +41,7 @@ namespace OCPviolation
             else if (a.GetType() == typeof(Cat))
             {
                 Meow(a);
-            }
-           
-
-            
+            }  
         }
 
         static void Main(string[] args)
