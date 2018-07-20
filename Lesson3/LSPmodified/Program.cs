@@ -11,10 +11,13 @@ namespace LSPmodified
         void GiveBirth();
     }
 
-    public abstract class Mammal
+    public class Mammal
     {
         int age;
-        public abstract void GrowFurr();
+        public virtual void GrowFurr()
+        {
+            Console.WriteLine("Oh it's a baby");
+        }
 
     }
 

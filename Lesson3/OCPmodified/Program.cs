@@ -40,5 +40,14 @@ namespace OCPmodified
             
             Console.ReadKey();
         }
+
+        static void MyMethod(IList<Animal> animals)
+        {
+            foreach (var animal in animals)
+            {
+                animal.doNoise();
+            }
+        }
+
     }
 }
