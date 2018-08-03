@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AE3426D5-CB45-4D81-9A64-C8D3EAE8E034}</ProjectGuid>
+    <ProjectGuid>{852BEC5E-2A82-4C18-823E-817626A9CE5B}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>lesson8</RootNamespace>
-    <AssemblyName>lesson8</AssemblyName>
+    <RootNamespace>Strategy</RootNamespace>
+    <AssemblyName>Strategy</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -31,9 +31,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'LOCAL|AnyCPU'">
-    <OutputPath>bin\LOCAL\</OutputPath>
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -45,7 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Angle.cs" />
+    <Compile Include="CalculateMonthlyAvgSalary.cs" />
+    <Compile Include="CalculateWeeklyAvgSalary.cs" />
+    <Compile Include="Employee.cs" />
+    <Compile Include="ICalculateAvgSalary.cs" />
+    <Compile Include="ListForCalculatingAverageSalary.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

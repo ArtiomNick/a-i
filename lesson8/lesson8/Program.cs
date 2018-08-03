@@ -15,21 +15,8 @@ namespace lesson8
         {
             double a = 98, b = 0;
             double result = 0;
-
             var myList = new List<int>() { 1, 2, 3, 4, 5 };
 
-            try
-            {
-                
-            }
-            catch(Exception e)
-            {
-                
-            }
-            finally
-            {
-
-            }
 
             var angle1 = new Angle(10, 40, 82);
 
